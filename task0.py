@@ -1,4 +1,3 @@
-# import sys
 class List:
     def __init__(self, token, name, price, category):
         self.token = token
@@ -49,7 +48,6 @@ while True:
             print(f"Total Bill: {total:.2f}")
         case 3:
             print("Thanks for visiting us...")
-            break
-            # sys.Exit(0)
+            exit()
         case _:
             print("Invalid choice...!")
