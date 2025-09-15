@@ -5,7 +5,7 @@ class List:
         self.price = price
         self.category = category
     def __str__(self):
-        return f"{self.token}\t{self.name}\t ${self.price:.2f}\t\t{self.category}"
+        return f"{self.token}\t{self.name}\t ${self.price:.2f}\t{self.category}"
 class Foods:
     def __init__(self):
         self.foods = [ List(1,'Samosa',10,'Desi'),
@@ -16,8 +16,8 @@ class Foods:
                       List(6,'Lassi',15,'Beverage'),
                       List(7,'Laddoo',5,'Sweets')]
     def showList(self):
-        print("List items:\n")
-        print("Token\tName\tPrice\t\tCategory")
+        print("List items:")
+        print("Token\tName\tPrice\tCategory")
         for foods in self.foods:
             print(f"{foods}\n")
     def getItem(self,token):
@@ -27,7 +27,7 @@ class Foods:
         return None
 items= Foods()
 while True:
-    print("Propagation Panel:\n1. Show Menu Cardt\n2. Order Food\n3. Exit")
+    print("Propagation Panel:\n1. Show Menu Card\n2. Order Food\n3. Exit")
     choice=int(input())
     match choice:
         case 1:
